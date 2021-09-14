@@ -1,4 +1,4 @@
-# Bowen Murphy (bomurphy)
+# Bowen Murphy (bomurph)
 
 Hi, my name is Bowen Murphy. I am currently a Senior studying informatics with my cognate in Human-Centered Computing. 
 I was born in Bloomington, Indiana and have always lived here. Below are a couple of my interests:
