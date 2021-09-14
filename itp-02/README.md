@@ -1,1 +1,1 @@
-This folder is for ITP-02.
+Thi folder is for ITP-02.
