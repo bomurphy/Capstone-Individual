@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITP 02</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="name-container">
+    <h1 class="name">
+        Bowen Murphy
+    </h1>
+
+<div class="user-name-container">
+    <h1 class="user-name">
+        bomurphy
+    </h1>
+</div>
+<div class="time-container"></div>
+    <h2 class="time"></h2>
+</div>
+
+<div class="message-container"></div>
+    <h2 class="message"></h2>
+</div>
+<div class="button-container"></div>
+    <button>Show</button>
+</div>
+
+<script>
+function clock() {
+    let today = new Date();
+    let hours = today.getHours();
+    let minutes = today.getMinutes();
+    let seconds = today.getSeconds();
+    let message = document.querySelector('.message');
+    document.querySelector('.time').innerHTML = hours + ':' + minutes + ':' + seconds;
+
+    if (hours >= 5 && minutes >=45) {
+        message.innerHTML = "Guten Morgen"
+    } else if (hours >= 12 && hours < 18) {
+        message.innerHTML = "Guten Tag"
+    }else if (hours >= 18 || hours == 5 && minutes < 45) {
+        message.innerHTML = "Guten Abend"
+    }
+
+}
+
+
+setInterval(clock, 100);
+</script>
+
+
+</body>
+</html>
