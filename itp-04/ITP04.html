@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITP 04</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<form class="form" id="myForm" method="POST">
+    <label for="inp_number">Input Whole Number</label>
+    <input type="text" name="number" id="number"/>
+    <button type="submit" id="button">Translate</button>
+</form>
+<div id="results"></div>
+<script>
+var form = document.querySelector("#myForm")
+form.addEventListener('submit',function(e) {
+    var number = document.querySelector('#number').value
+    var team_num = "51"
+    e.preventDefault()
+
+    if (number.trim() % 1 === 0 && number != "" && number == Number(number)) {
+        fetch("https://infocpst.luddy.indiana.edu/magic-number/generate", {
+            method: 'POST',
+            body:JSON.stringify({
+                team: team_num,
+                number: number
+            }),
+            headers:{
+                "Content-Type":"application/json; charset=UTF-8"
+            }
+        })
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(data){
+            console.log(data)
+            var results = document.querySelector('#results');
+            var html = `<p> Status: ${data.status}</p> <p>Message: ${data.message}</p>`
+            results.insertAdjacentHTML('beforeend', html)
+        })
+
+    }
+
+
+    
+})
+
+</script>
+
+
+</body>
+</html>
