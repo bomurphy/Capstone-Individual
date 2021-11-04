@@ -1,12 +1,15 @@
 This folder is for ITP-05.
 
 [ITP 05 Login link](https://cgi.luddy.indiana.edu/~bomurphy/capstone-individual/bomurphy/itp-05/login.html)
+
 [ITP 05 Index link](https://cgi.luddy.indiana.edu/~bomurphy/capstone-individual/bomurphy/itp-05/index.php)
 
 Username 1: jdoe
+
 Password 1: abcde
 
 Username 2: ajohn 
+
 Password 2: colts
 
 I have created a webpage that using HTML and PHP that uses a login system that protects a page containing
