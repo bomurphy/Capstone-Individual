@@ -1,0 +1,44 @@
+<html>
+<head><title>ITP 06</title></head>
+<body>
+<form action="register.php" method="post">
+    <h1>Register</h1>
+First Name: <input type="text" name="fname" required> <br>
+
+Last Name: <input type="text" name="lname"> <br>
+
+Email: <input type="email" name="form_email"> <br>
+
+Password 1: <input type="text" id="pass1" minlength="8" name="form_pass1"> <br>
+
+Password 2: <input type="text" id="pass2" minlength="8" name="form_pass2"> <br>
+
+<input type="submit" id="register_btn" value="Register"> </br>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form action="login.php" method="post">
+    Email: <input type="email" name="login_email" />
+    Password: <input type="text" name="login_pass" />
+<input type="submit" name="submit" value="Login">
+</form>
+
+
+<script>
+
+    // let pass1 = document.querySelector('#pass1');
+    // let pass2 = document.querySelector('#pass2');
+    // let registerbtn = document.querySelector('#register_btn');
+
+    // registerbtn.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     console.log(`pass1: ${pass1.value} pass2: ${pass2.value}`)
+    // })
+
+</script>
+
+</body>
+</html>
